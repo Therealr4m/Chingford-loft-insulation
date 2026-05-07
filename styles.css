@@ -126,6 +126,7 @@ p{
 .hero-content{
   max-width:800px;
   padding:0 24px;
+  font-weight: bolder;
 }
 
 .hero p{
@@ -263,7 +264,7 @@ p{
   margin-top:16px;
   padding:14px 20px;
   background:var(--accent);
-  color:var(--white);
+  color: #4682B4;
   font-weight:600;
   border-radius:var(--radius);
   transition:0.25s ease;
@@ -407,7 +408,7 @@ p{
 
 .final-cta .btn{
   background:var(--accent);
-  color:var(--white);
+  color: #4682B4;
 }
 
  @media(max-width:768px){
