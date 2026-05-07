@@ -50,7 +50,15 @@ ul{
   width:100%;
   max-width:1100px;
   margin:auto;
-  padding:0 24px;
+  padding:0 20px;
+}
+
+ @media(max-width:768px){
+
+.container{
+  padding:0 16px;
+}
+
 }
 
 /* =========================================================
@@ -58,7 +66,7 @@ ul{
 ========================================================= */
 
 h1{
-  font-size:48px;
+  font-size:clamp(34px, 6vw, 48px);
   font-weight:700;
   letter-spacing:-0.5px;
   line-height:1.1;
@@ -66,7 +74,7 @@ h1{
 }
 
 h2{
-  font-size:34px;
+    font-size:clamp(28px, 5vw, 34px);
   font-weight:700;
   letter-spacing:-0.3px;
   margin-bottom:24px;
@@ -83,7 +91,6 @@ p{
   font-size:16px;
   color:var(--text);
 }
-
 
 /* =========================================================
    5. HERO
@@ -124,7 +131,16 @@ p{
 .hero p{
   color:var(--white);
   opacity:0.8;
-  font-size:18px;
+  font-size:17px;
+  line-height:1.6 ;
+}
+
+@media(max-width:768px){
+
+.hero p{
+  font-size:16px;
+}
+
 }
 
 
@@ -134,7 +150,7 @@ p{
 
 .below-hero-nav{
   background:var(--white);
-  padding:40px 24px;
+  padding:28px 20px;
   border-bottom:1px solid rgba(0,0,0,0.06);
 }
 
@@ -241,14 +257,20 @@ p{
 ========================================================= */
 
 .btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:14px 28px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:16px;
+  padding:14px 20px;
   background:var(--accent);
   color:var(--white);
   font-weight:600;
   border-radius:var(--radius);
   transition:0.25s ease;
+  line-height:1.45;
+  text-align:center;
+  width:100%;
+  max-width:520px;
 }
 
 .btn:hover{
@@ -262,7 +284,7 @@ p{
 ========================================================= */
 
 .section{
-  padding:100px 0;
+  padding:72px 0;
 }
 
 .section-light{
@@ -273,6 +295,12 @@ p{
   background:var(--bg);
   text-align: center;
 }
+
+@media(max-width:768px){
+
+.section{
+  padding:56px 0;
+}}
 
 
 /* INTERNAL LINKING */
@@ -320,13 +348,13 @@ p{
 .grid-3{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:40px;
+  gap:24px;
   margin-top:40px;
 }
 
 .card{
   background:var(--white);
-  padding:40px;
+  padding:28px;
   border-radius:var(--radius);
   box-shadow:var(--shadow-soft);
   transition:0.3s ease;
@@ -337,6 +365,13 @@ p{
   box-shadow:var(--shadow-hover);
 }
 
+@media(max-width:768px){
+
+.card{
+  padding:24px;
+}
+
+}
 
 /* =========================================================
    9. FAQ
@@ -360,7 +395,7 @@ p{
 .final-cta{
   background:var(--primary);
   color:var(--white);
-  padding:120px 0;
+  padding:80px 0;
   text-align:center;
 }
 
@@ -373,6 +408,14 @@ p{
 .final-cta .btn{
   background:var(--accent);
   color:var(--white);
+}
+
+ @media(max-width:768px){
+
+.final-cta{
+  padding:64px 0;
+}
+
 }
 
 
