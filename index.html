@@ -18,72 +18,79 @@
     }
   </style>
 
-<script type="application/ld+json">
-
-
-"@context": "https://schema.org",
-"@graph": [
-
+  <script type="application/ld+json">
 {
-"@type": "LocalBusiness",
-"@id": "https://loftinsulationchingford.co.uk/#business",
-"name": "Chingford Loft Insulation ",
-"url": "https://loftinsulationchingford.co.uk/",
-"telephone": "+44852858435",
-"priceRange": "££",
-"address": {
-"@type": "PostalAddress",
-"addressLocality": "Chingford",
-"addressRegion": "East London",
-"addressCountry": "GB"
-},
+  "@context": "https://schema.org",
+  "@graph": [
 
-"areaServed": [
-{
-"@type": "Place",
-"name": "Chingford, East London"
-},
-{
-"@type": "Place",
-"name": "Woodford Green, East London"
-},
-{
-"@type": "Place",
-"name": "Waltham Abbey, East London"
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://loftinsulationchingford.co.uk/#business",
+      "name": "Chingford Loft Insulation",
+      "url": "https://loftinsulationchingford.co.uk/",
+      "telephone": "+44852858435",
+      "priceRange": "££",
+
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chingford",
+        "addressRegion": "East London",
+        "addressCountry": "GB"
+      },
+
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Chingford, East London"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodford Green, East London"
+        },
+        {
+          "@type": "Place",
+          "name": "Waltham Abbey, East London"
+        }
+      ]
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://loftinsulationchingford.co.uk/#service",
+
+      "name": "Loft Insulation Services in Chingford",
+
+      "provider": {
+        "@id": "https://loftinsulationchingford.co.uk/#business"
+      },
+
+      "serviceType": [
+        "Loft insulation installation",
+        "Loft insulation removal",
+        "Loft insulation top ups",
+        "Rigid PIR loft insulation"
+      ],
+
+      "areaServed": {
+        "@type": "Place",
+        "name": "Chingford, East London"
+      }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://loftinsulationchingford.co.uk/#website",
+
+      "url": "https://loftinsulationchingford.co.uk/",
+
+      "name": "Chingford Loft Insulation",
+
+      "publisher": {
+        "@id": "https://loftinsulationchingford.co.uk/#business"
+      }
+    }
+  ]
 }
-]
-
-}
-{
-"@type": "Service",
-"@id": "https://loftinsulationchingford.co.uk/#service",
-"name": "Loft Insulation Services in Chingford",
-"provider": {
-"@id": "https://loftinsulationchingford.co.uk/#business"
-},
-"serviceType": [
-"Loft insulation installation",
-"Loft insulation removal",
-"Loft insulation top ups",
-"Rigid PIR loft insulation"
-],
-"areaServed": {
-"@type": "Place",
-"name": "Chingford, East London"
-}
-},
-
-{
-"@type": "WebSite",
-"@id": "https://loftinsulationchingford.co.uk/#website",
-"url": "https://loftinsulationchingford.co.uk/",
-"name": "Chingford Loft Insulation ",
-"publisher": {
-"@id": "https://loftinsulationchingford.co.uk/#business"
-}
-}
-
-]
 </script>
 </head>
 <body>
