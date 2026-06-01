@@ -51,12 +51,19 @@ ul{
   max-width:1100px;
   margin:auto;
   padding:0 20px;
+  
+}
+
+.container h2{
+  text-align: center;
+  color: #1d1a1a;
 }
 
  @media(max-width:768px){
 
 .container{
   padding:0 16px;
+
 }
 
 }
@@ -563,4 +570,29 @@ p{
 .contact-btn{
   width:100%;
   margin-top:24px;
+}
+
+/* =========================================================
+   HELPFUL GUIDES LINKS
+========================================================= */
+
+.helpful-guides-links{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  text-align: center;
+  color: #6a70c7;
+  font-weight: 600;
+}
+
+.helpful-guides-links a{
+  color: #6a70c7;
+  font-size:18px;
+  font-weight:600;
+  transition:0.2s ease;
+}
+
+.helpful-guides-links a:hover{
+  opacity:0.75;
+  text-decoration:underline;
 }
