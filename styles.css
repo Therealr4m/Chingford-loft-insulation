@@ -286,6 +286,63 @@ p{
   box-shadow:var(--shadow-hover);
 }
 
+/* =========================================
+FIXED CALL CTA
+========================================= */
+
+.fixed-call-cta{
+position:fixed;
+top:50%;
+right:-165px;
+transform:translateY(-50%);
+display:flex;
+align-items:center;
+gap:10px;
+padding:15px 22px;
+background:var(--primary);
+color:var(--white);
+font-weight:600;
+font-size:15px;
+text-decoration:none;
+border-radius:6px 0 0 6px;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+transition:.28s ease;
+z-index:9999;
+white-space:nowrap;
+}
+
+.fixed-call-cta:hover{
+right:0;
+filter:brightness(.92);
+box-shadow:0 16px 35px rgba(0,0,0,.18);
+}
+
+.fixed-call-cta span{
+line-height:1;
+}
+
+/* =========================================
+MOBILE
+========================================= */
+
+@media (max-width:768px){
+
+.fixed-call-cta{
+top:auto;
+left:14px;
+right:14px;
+bottom:14px;
+transform:none;
+justify-content:center;
+padding:15px 18px;
+border-radius:6px;
+}
+
+.fixed-call-cta:hover{
+right:14px;
+}
+
+}
 
 /* =========================================================
    7. SECTION SYSTEM
@@ -596,3 +653,4 @@ p{
   opacity:0.75;
   text-decoration:underline;
 }
+
