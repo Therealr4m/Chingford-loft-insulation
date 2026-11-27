@@ -1148,3 +1148,635 @@ line-height:1;
   }
 
 }
+
+
+
+/* =========================================
+   LOFT CONFIDENCE SECTION
+========================================= */
+
+.loft-confidence {
+  position: relative;
+  padding: 85px 0 90px;
+  background: var(--white);
+  color: var(--text);
+}
+
+.loft-confidence-inner {
+  width: min(1160px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+/* Editorial heading */
+
+.loft-confidence-heading {
+  max-width: 740px;
+  margin-bottom: 46px;
+}
+
+.loft-confidence-kicker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.loft-confidence-kicker::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: var(--primary);
+  flex-shrink: 0;
+}
+
+.loft-confidence-heading h2 {
+  font-size: clamp(30px, 3.5vw, 44px);
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -1.2px;
+  color: var(--text);
+  margin: 0 0 15px;
+}
+
+.loft-confidence-heading p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+}
+
+/* Open, borderless trust layout */
+
+.loft-confidence-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 32px;
+  row-gap: 36px;
+}
+
+.loft-confidence-item {
+  position: relative;
+  padding: 28px 0 12px;
+  border-top: 1px solid #d5e0e8;
+  min-width: 0;
+}
+
+.loft-confidence-icon {
+  display: block;
+  width: 34px;
+  height: 34px;
+  color: var(--primary);
+  margin-bottom: 23px;
+}
+
+.loft-confidence-copy h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+  color: var(--text);
+  margin: 0 0 10px;
+}
+
+.loft-confidence-copy p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #626970;
+  margin: 0;
+}
+
+/* Subtle finishing detail */
+
+.loft-confidence-inner::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--primary);
+  margin-top: 35px;
+}
+
+/* Tablet */
+
+@media (max-width: 960px) {
+
+  .loft-confidence {
+    padding: 65px 0;
+  }
+
+  .loft-confidence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 35px;
+    row-gap: 25px;
+  }
+
+  .loft-confidence-heading {
+    margin-bottom: 35px;
+  }
+
+}
+
+/* Mobile-first reading experience */
+
+@media (max-width: 600px) {
+
+  .loft-confidence {
+    padding: 45px 0;
+  }
+
+  .loft-confidence-inner {
+    width: calc(100% - 40px);
+  }
+
+  .loft-confidence-heading {
+    margin-bottom: 26px;
+  }
+
+  .loft-confidence-kicker {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+  }
+
+  .loft-confidence-kicker::before {
+    width: 23px;
+  }
+
+  .loft-confidence-heading h2 {
+    font-size: clamp(27px, 7vw, 34px);
+    line-height: 1.18;
+    letter-spacing: -0.8px;
+    margin-bottom: 12px;
+  }
+
+  .loft-confidence-heading p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .loft-confidence-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .loft-confidence-item {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    align-items: start;
+    gap: 17px;
+    padding: 22px 0;
+  }
+
+  .loft-confidence-icon {
+    width: 29px;
+    height: 29px;
+    margin: 2px 0 0;
+  }
+
+  .loft-confidence-copy h3 {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+
+  .loft-confidence-copy p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .loft-confidence-item:last-child {
+    border-bottom: 1px solid #d5e0e8;
+  }
+
+  .loft-confidence-inner::after {
+    width: 35px;
+    margin-top: 24px;
+  }
+
+}
+
+/* =========================================
+   LOFT INSULATION PROJECT GUIDE
+========================================= */
+.loft-guide,
+.loft-guide * {
+  box-sizing: border-box;
+}
+.loft-guide [hidden] {
+  display: none !important;
+}
+.loft-guide {
+  padding: 80px 0;
+  background: var(--bg);
+  color: var(--text);
+}
+.loft-guide-inner {
+  width: min(1160px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* Section heading */
+.loft-guide-heading {
+  max-width: 720px;
+  margin-bottom: 38px;
+}
+.loft-guide-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #35678f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.loft-guide-label::before {
+  content: "";
+  width: 28px;
+  height: 2px;
+  background: var(--primary);
+}
+.loft-guide-heading h2 {
+  margin: 0 0 14px;
+  font-size: clamp(29px, 4vw, 43px);
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1.18;
+}
+.loft-guide-heading p {
+  margin: 0;
+  color: #60666b;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* Main tool layout */
+.loft-guide-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  background: var(--white);
+  border: 1px solid #dce2e7;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+.loft-guide-form {
+  padding: 36px;
+  min-width: 0;
+}
+.loft-guide-form-heading,
+.loft-guide-result-heading {
+  margin-bottom: 28px;
+}
+.loft-guide-form-heading > span,
+.loft-guide-result-heading > span {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #35678f;
+  margin-bottom: 9px;
+}
+.loft-guide-form-heading h3,
+.loft-guide-result-heading h3 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Input fields */
+.loft-guide-fields {
+  display: grid;
+  gap: 22px;
+}
+.loft-guide-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+.loft-guide-field > label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text);
+}
+.loft-guide-field input[type="number"],
+.loft-guide-field select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 51px;
+  padding: 13px 15px;
+  background: var(--white);
+  border: 1px solid #ccd5dc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--text);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.loft-guide-field select {
+  appearance: none;
+  padding-right: 38px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%234682B4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+.loft-guide-field input:focus,
+.loft-guide-field select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(70, 130, 180, 0.12);
+}
+.loft-guide-field input:disabled,
+.loft-guide-field select:disabled {
+  background-color: #f0f2f4;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.loft-guide-field .loft-guide-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #60666b;
+  min-height: 32px;
+  cursor: pointer;
+}
+.loft-guide-checkbox input {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: var(--primary);
+  flex-shrink: 0;
+}
+
+/* Generate button */
+.loft-guide-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  width: 100%;
+  min-height: 55px;
+  padding: 16px 20px;
+  margin-top: 28px;
+  background: #35678f;
+  color: var(--white);
+  border: 0;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.loft-guide-button:hover {
+  background: #2c5679;
+}
+.loft-guide-button:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 4px;
+}
+.loft-guide-button span {
+  font-size: 22px;
+  font-weight: 400;
+}
+.loft-guide-privacy {
+  margin: 14px 0 0;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Results panel */
+.loft-guide-output {
+  position: relative;
+  min-width: 0;
+  padding: 36px;
+  background: #f0f5f8;
+  border-left: 1px solid #dce2e7;
+}
+
+/* Initial empty state */
+.loft-guide-placeholder {
+  position: sticky;
+  top: 100px;
+  max-width: 290px;
+  margin: 100px auto 0;
+  text-align: center;
+}
+.loft-guide-placeholder svg {
+  display: block;
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 24px;
+  color: var(--primary);
+}
+.loft-guide-placeholder h3 {
+  margin: 0 0 12px;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+.loft-guide-placeholder p {
+  margin: 0;
+  color: #64717b;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* Numerical results */
+.loft-guide-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  padding: 24px 0;
+  border-top: 1px solid #d2dfe8;
+  border-bottom: 1px solid #d2dfe8;
+}
+.loft-guide-metric {
+  min-width: 0;
+}
+.loft-guide-metric > span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #586873;
+  margin-bottom: 9px;
+}
+.loft-guide-metric strong {
+  display: block;
+  font-size: clamp(23px, 2.5vw, 32px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  color: #35678f;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.loft-guide-depth-result {
+  grid-column: 1 / -1;
+  padding-top: 20px;
+  border-top: 1px solid #d2dfe8;
+}
+
+/* Potential project requirement */
+.loft-guide-recommendation {
+  padding: 20px 0 20px 17px;
+  border-left: 3px solid var(--primary);
+  margin: 28px 0;
+}
+.loft-guide-recommendation > span {
+  display: block;
+  font-size: 12px;
+  color: #586873;
+  margin-bottom: 8px;
+}
+.loft-guide-recommendation h4 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.4px;
+}
+
+/* Personalised guidance */
+.loft-guide-considerations h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 18px;
+}
+.loft-guide-considerations ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.loft-guide-considerations li {
+  position: relative;
+  padding: 0 0 0 24px;
+  margin-bottom: 17px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #414e58;
+}
+.loft-guide-considerations li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #35678f;
+}
+.loft-guide-disclaimer {
+  border-top: 1px solid #d2dfe8;
+  padding-top: 20px;
+  margin: 24px 0 0;
+  font-size: 12px;
+  line-height: 1.75;
+  color: #5c6871;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .loft-guide-form,
+  .loft-guide-output {
+    padding: 28px;
+  }
+}
+
+/* Mobile UX */
+@media (max-width: 760px) {
+  .loft-guide {
+    padding: 48px 0;
+  }
+  .loft-guide-inner {
+    width: calc(100% - 32px);
+  }
+  .loft-guide-heading {
+    margin-bottom: 26px;
+  }
+  .loft-guide-heading h2 {
+    font-size: 30px;
+    letter-spacing: -0.8px;
+  }
+  .loft-guide-heading p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .loft-guide-layout {
+    grid-template-columns: 1fr;
+    border-radius: 8px;
+  }
+  .loft-guide-form {
+    padding: 24px 19px;
+  }
+  .loft-guide-form-heading h3,
+  .loft-guide-result-heading h3 {
+    font-size: 22px;
+  }
+  .loft-guide-fields {
+    gap: 20px;
+  }
+  .loft-guide-field input[type="number"],
+  .loft-guide-field select {
+    min-height: 53px;
+    font-size: 16px;
+  }
+  .loft-guide-button {
+    min-height: 56px;
+    padding: 16px;
+  }
+  .loft-guide-output {
+    padding: 26px 19px;
+    border-left: 0;
+    border-top: 1px solid #dce2e7;
+    scroll-margin-top: 100px;
+  }
+  .loft-guide-placeholder {
+    display: none;
+  }
+  .loft-guide-output:not(.loft-guide-generated) {
+    display: none;
+  }
+  .loft-guide-metrics {
+    gap: 16px;
+    padding: 22px 0;
+  }
+  .loft-guide-metric strong {
+    font-size: 26px;
+  }
+  .loft-guide-recommendation h4 {
+    font-size: 21px;
+  }
+  .loft-guide-considerations li {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .loft-guide * {
+    transition: none !important;
+  }
+}
